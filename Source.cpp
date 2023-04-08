@@ -4,7 +4,8 @@ using namespace std;
 
 float average(int i1, int i2, int i3)
 {
-	return i1 + i2 + i3 / 3.0f;
+	// I added parentheses on line 8
+	return( i1 + i2 + i3 / 3.0f);
 }
 
 int main()
@@ -13,7 +14,8 @@ int main()
 	cout << "This program calculates the average of three numbers." << endl;
 	cout << "First number: "; cin >> n1;
 	cout << "Second number: "; cin >> n2;
-	cout << "Third number: "; cin >> n2;
+	// I changed n2 to n3 on line 17
+	cout << "Third number: "; cin >> n3;
 
 	float a = average(n1, n2, n3);
 
